@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.oyeleke.myapplication.activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_url_field"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get"
+                android:id="@+id/btn_get"
+                android:onClick="getReq"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POST"
+                android:id="@+id/btn_post"
+                android:onClick="postReq"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PUT"
+                android:id="@+id/btn_put"
+                android:onClick="putReq"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PATCH"
+                android:id="@+id/btn_patch"
+                android:onClick="patchReq"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="70dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELETE"
+                android:id="@+id/btn_delete"
+                android:onClick="deleteReq"
+                android:layout_marginRight="20dp"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_key"
+                android:hint="KEY"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_value"
+                android:hint="VALUE"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add_query"
+                android:text="add"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_results"/>
+    </LinearLayout>
+
+</ScrollView>
